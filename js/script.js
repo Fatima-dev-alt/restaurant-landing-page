@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- 5. FEATURED MENU DATA + DYNAMIC RENDER + FILTER ---------- */
   const menuItems = [
-    { name: 'Smoked Brisket Toast', desc: 'Sourdough, whipped fat, pickled onion', price: '$14', rating: '★★★★★', icon: '🥪', category: 'breakfast' },
+    { name: 'Smoked Brisket Toast', desc: 'Sourdough, whipped fat, pickled onion', price: '$14', rating: '★★★★★', image: 'assets/images/pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg', },
     { name: 'Charred Peach & Burrata', desc: 'Basil oil, honeycomb, sea salt', price: '$12', rating: '★★★★☆', icon: '🍑', category: 'lunch' },
     { name: 'Wood-Fired Margherita', desc: 'San Marzano, fior di latte, basil', price: '$18', rating: '★★★★★', icon: '🍕', category: 'dinner' },
     { name: 'Ember Grilled Ribeye', desc: '28-day aged, chimichurri, embers', price: '$34', rating: '★★★★★', icon: '🥩', category: 'dinner' },
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = filter === 'all' ? menuItems : menuItems.filter(i => i.category === filter);
     grid.innerHTML = items.map(item => `
       <div class="food-card reveal in-view">
-        <div class="food-img">${item.icon}</div>
+        <div class="food-img"><img src="${item.image}" alt="${item.name}"></div>
         <div class="food-body">
           <div class="food-top">
             <h3>${item.name}</h3>
