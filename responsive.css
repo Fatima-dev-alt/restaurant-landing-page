@@ -1,0 +1,62 @@
+/* ============================================
+   RESPONSIVE.CSS — Media Queries
+   ============================================ */
+
+/* ===== LAPTOP / SMALL DESKTOP (<=1100px) ===== */
+@media (max-width: 1100px){
+  .menu-grid{ grid-template-columns: repeat(2, 1fr); }
+  .services-grid{ grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid{ grid-template-columns: repeat(3, 1fr); }
+  .hero-visual{ opacity: 0.5; right: -2%; }
+}
+
+/* ===== TABLET (<=900px) ===== */
+@media (max-width: 900px){
+  section{ padding: 76px 20px; }
+
+  .nav-links{
+    position: fixed; top: 0; right: -100%; height: 100vh; width: min(78vw, 320px);
+    background: var(--bg-alt); border-left: 1px solid var(--border);
+    flex-direction: column; align-items: flex-start; justify-content: center;
+    gap: 26px; padding: 40px; transition: right var(--transition);
+    z-index: 600;
+  }
+  .nav-links.open{ right: 0; }
+  .nav-cta{ margin-top: 10px; }
+  .hamburger{ display:flex; }
+  .hamburger.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2){ opacity:0; }
+  .hamburger.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+
+  .hero-visual{ display:none; }
+  .hero-container{ max-width: 100%; }
+
+  .about-container{ grid-template-columns: 1fr; }
+  .stats{ grid-template-columns: repeat(2,1fr); }
+
+  .offer-container{ grid-template-columns: 1fr; padding: 36px; text-align:center; }
+  .countdown{ justify-content:center; }
+  .offer-desc{ margin-left:auto; margin-right:auto; }
+  .offer-visual{ order:-1; font-size: 4rem; }
+
+  .services-grid{ grid-template-columns: 1fr 1fr; }
+  .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
+
+  .contact-container{ grid-template-columns: 1fr; }
+  .footer-container{ grid-template-columns: 1fr 1fr; }
+}
+
+/* ===== MOBILE (<=600px) ===== */
+@media (max-width: 600px){
+  .menu-grid{ grid-template-columns: 1fr; }
+  .services-grid{ grid-template-columns: 1fr; }
+  .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
+  .stats{ grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .form-row{ grid-template-columns: 1fr; }
+  .footer-container{ grid-template-columns: 1fr; gap: 34px; }
+  .hero-btns{ flex-direction:column; }
+  .hero-btns .btn{ text-align:center; }
+  .countdown{ flex-wrap: wrap; }
+  .t-arrow{ display:none; }
+  .modal{ padding: 28px 22px; }
+}
