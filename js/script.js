@@ -206,10 +206,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- 8. TESTIMONIAL SLIDER (auto + manual) ---------- */
   const testimonials = [
-    { name: 'Maya R.', quote: 'The ribeye alone is worth the drive. Best fire-cooked food in the city, hands down.', rating: '★★★★★' },
-    { name: 'Daniel K.', quote: 'Service is warm, the room smells incredible, and the weekend offer is unbeatable.', rating: '★★★★★' },
-    { name: 'Priya S.', quote: 'Booked through the site in under a minute and the table was ready exactly on time.', rating: '★★★★☆' },
-    { name: 'Omar F.', quote: 'Every dish tastes like someone actually cared about it. Rare these days.', rating: '★★★★★' },
+    { name: 'Maya R.', quote: 'The ribeye alone is worth the drive. Best fire-cooked food in the city, hands down.', rating: '★★★★★', image: 'assets/images/christina-wocintechchat-com-m-PlikkWB79qs-unsplash.jpg' },
+  { name: 'Daniel K.', quote: 'Service is warm, the room smells incredible, and the weekend offer is unbeatable.', rating: '★★★★★', image: 'assets/images/hannah-nicollet-JQ2D4I-2eyw-unsplash.jpg' },
+  { name: 'Priya S.', quote: 'Booked through the site in under a minute and the table was ready exactly on time.', rating: '★★★★☆', image: 'assets/images/zahra-rahimzadeh-qtkDCFuN62g-unsplash.jpg' },
+  { name: 'Omar F.', quote: 'Every dish tastes like someone actually cared about it. Rare these days.', rating: '★★★★★', image: 'assets/images/livio-fretz-G7KYSZgpv_k-unsplash.jpg' },
   ];
 
   function initTestimonials(){
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dotsWrap = document.getElementById('tDots');
     track.innerHTML = testimonials.map(t => `
       <div class="t-card">
-        <div class="t-avatar">🧑‍🍳</div>
+        <div class="t-avatar"><img src="${t.image}" alt="${t.name}"></div>
         <div class="t-rating">${t.rating}</div>
         <p class="t-quote">"${t.quote}"</p>
         <p class="t-name">${t.name}</p>
