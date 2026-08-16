@@ -161,12 +161,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ---------- 7. GALLERY + LIGHTBOX ---------- */
-  const galleryImages = ['🍕','🥩','🍝','🍷','🥗','🍰','🔥','🍳'];
+  const galleryImages = ['assets/images/chad-montano-MqT0asuoIcU-unsplash.jpg',
+  'assets/images/behrouz-sasani-RZoNMrC13KU-unsplash.jpg',
+  'assets/images/filipp-romanovski-EiqntyvJoJs-unsplash.jpg',
+  'assets/images/janesca-Nu3IcDmYBV8-unsplash.jpg',
+  'assets/images/katya-azimova-5CIbULQHVBk-unsplash.jpg',
+  'assets/images/nahima-aparicio-PrOraTAsGsY-unsplash.jpg',
+  'assets/images/pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg',
+  'assets/images/priyanka-shitole-65sWI5j9pwc-unsplash.jpg'];
 
   function initGallery(){
     const grid = document.getElementById('galleryGrid');
     grid.innerHTML = galleryImages.map((icon, i) =>
-      `<div class="gallery-item reveal in-view" data-index="${i}">${icon}</div>`
+      `<div class="gallery-item reveal in-view" data-index="${i}"><img src="${icon}" alt="Gallery image ${i + 1}"></div>`
     ).join('');
 
     const lightbox = document.getElementById('lightbox');
