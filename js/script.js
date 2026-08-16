@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Crispy Chicken Bao', desc: 'Sesame slaw, chili glaze', price: '$11', rating: '★★★★☆', image:'assets/images/sandie-clarke-MGUQUgl55ik-unsplash.jpg',category: 'fastfood' },
     { name: 'Stone Fruit Galette', desc: 'Flaky crust, vanilla mascarpone', price: '$9', rating: '★★★★★', image:'assets/images/katya-azimova-5CIbULQHVBk-unsplash.jpg',category: 'desserts' },
     { name: 'Morning Shakshuka', desc: 'Slow-cooked peppers, feta, herb oil', price: '$13', rating: '★★★★☆', image:'assets/images/filipp-romanovski-EiqntyvJoJs-unsplash.jpg',category: 'breakfast' },
-    { name: 'Loaded Fire Fries', desc: 'Smoked cheddar, jalapeño, aioli', price: '$8', rating: '★★★★☆', icon: '🍟', category: 'fastfood' },
+    { name: 'Loaded Fire Fries', desc: 'Smoked cheddar, jalapeño, aioli', price: '$8', rating: '★★★★☆', image:'assets/images/nahima-aparicio-PrOraTAsGsY-unsplash.jpg',category: 'fastfood' },
     { name: 'Dark Chocolate Torte', desc: 'Espresso crumb, sea salt caramel', price: '$10', rating: '★★★★★', icon: '🍫', category: 'desserts' },
   ];
 
