@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Smoked Brisket Toast', desc: 'Sourdough, whipped fat, pickled onion', price: '$14', rating: '★★★★★', image: 'assets/images/pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg',category:'breakfast' },
     { name: 'Charred Peach & Burrata', desc: 'Basil oil, honeycomb, sea salt', price: '$12', rating: '★★★★☆', image:'assets/images/janesca-Nu3IcDmYBV8-unsplash.jpg',category:'launch' },
     { name: 'Wood-Fired Margherita', desc: 'San Marzano, fior di latte, basil', price: '$18', rating: '★★★★★', image:'assets/images/chad-montano-MqT0asuoIcU-unsplash.jpg',category: 'dinner' },
-    { name: 'Ember Grilled Ribeye', desc: '28-day aged, chimichurri, embers', price: '$34', rating: '★★★★★', image: 'assets/images/behrouz-sasani-RZoNMrC13KU-unsplash.jpg', category: 'dinner' },
+    { name: 'Ember Grilled Ribeye', desc: '28-day aged, chimichurri, embers', price: '$34', rating: '★★★★★', image:'assets/images/behrouz-sasani-RZoNMrC13KU-unsplash.jpg',category: 'dinner' },
     { name: 'Crispy Chicken Bao', desc: 'Sesame slaw, chili glaze', price: '$11', rating: '★★★★☆', icon: '🥟', category: 'fastfood' },
     { name: 'Stone Fruit Galette', desc: 'Flaky crust, vanilla mascarpone', price: '$9', rating: '★★★★★', icon: '🥧', category: 'desserts' },
     { name: 'Morning Shakshuka', desc: 'Slow-cooked peppers, feta, herb oil', price: '$13', rating: '★★★★☆', icon: '🍳', category: 'breakfast' },
