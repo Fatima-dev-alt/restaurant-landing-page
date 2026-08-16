@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuItems = [
     { name: 'Smoked Brisket Toast', desc: 'Sourdough, whipped fat, pickled onion', price: '$14', rating: '★★★★★', image: 'assets/images/pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg',category:'breakfast' },
     { name: 'Charred Peach & Burrata', desc: 'Basil oil, honeycomb, sea salt', price: '$12', rating: '★★★★☆', image:'assets/images/janesca-Nu3IcDmYBV8-unsplash.jpg',category:'launch' },
-    { name: 'Wood-Fired Margherita', desc: 'San Marzano, fior di latte, basil', price: '$18', rating: '★★★★★', icon: '🍕', category: 'dinner' },
+    { name: 'Wood-Fired Margherita', desc: 'San Marzano, fior di latte, basil', price: '$18', rating: '★★★★★', image: 'assets/images/chad-montano-MqT0asuoIcU-unsplash.jpg', category: 'dinner' },
     { name: 'Ember Grilled Ribeye', desc: '28-day aged, chimichurri, embers', price: '$34', rating: '★★★★★', icon: '🥩', category: 'dinner' },
     { name: 'Crispy Chicken Bao', desc: 'Sesame slaw, chili glaze', price: '$11', rating: '★★★★☆', icon: '🥟', category: 'fastfood' },
     { name: 'Stone Fruit Galette', desc: 'Flaky crust, vanilla mascarpone', price: '$9', rating: '★★★★★', icon: '🥧', category: 'desserts' },
